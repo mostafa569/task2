@@ -8,5 +8,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
       - name: "Printing folder contents"
         run: ls
+=======
+    
+
+        - uses: actions/checkout@v3
+
+        - name: "Login to Docker hub"
+          run : docker login --username ${{secret.DOCKER_USERNAME}} --password ${{secrets.DOCKER_TOKEN}}
+        - name: "Pushing to Docker hub"
+          run : docker push ${{secrets.DOCKER_USERNAME}}/myimage
+>>>>>>> fbbcb19fa370077b9807a5abcb7df8ffb7a33e4c
