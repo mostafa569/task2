@@ -8,6 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 'Printing folder contents'
-      run: ls
-
+      - name: "Printing folder contents"
+        run: ls
